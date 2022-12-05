@@ -1,4 +1,4 @@
-package com.pab.myapplication;
+package com.ahmfarisi.myquote;
 
 import org.junit.Test;
 

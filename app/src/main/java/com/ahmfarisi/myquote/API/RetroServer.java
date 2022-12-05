@@ -1,4 +1,4 @@
-package com.pab.myapplication.Api;
+package com.ahmfarisi.myquote.API;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -8,12 +8,11 @@ public class RetroServer {
     private static Retrofit retro;
 
     public static Retrofit connectRetrofit() {
-        if (retro == null) {
+        if(retro == null) {
             retro = new Retrofit.Builder()
                     .baseUrl(baseURL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
-
         }
         return retro;
     }
